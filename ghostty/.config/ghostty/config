@@ -1,0 +1,49 @@
+# appearance
+theme = Catppuccin Mocha
+background-blur-radius = 90
+background-opacity = 0.8
+
+# always remember window layout when reopening
+window-save-state = always
+window-padding-x = 5
+window-padding-y = 0
+
+# distribute extra padding evenly on both sides
+window-padding-balance = true
+
+# open maximized by default
+maximize = true
+
+# show dimensions overlay in the top-left when resizing panes
+resize-overlay-position = top-left
+
+# hide native window titlebar for a cleaner look
+window-decoration = false
+
+# blank title to avoid showing process name in the title bar
+title = " "
+
+# add vertical line spacing
+adjust-cell-height = 10%
+
+# blends titlebar into the terminal background
+macos-titlebar-style = transparent
+
+# font
+font-family = JetBrainsMono Nerd Font
+font-size = 16
+
+# cursor
+cursor-click-to-move = true
+
+# treat Option key as Alt for terminal shortcuts
+macos-option-as-alt = true
+mouse-hide-while-typing = true
+
+# automatically copy selected text to system clipboard
+copy-on-select = clipboard
+
+# keybinds
+# force ctrl+[ to send as escape to zsh's VI mode
+keybind = ctrl+[=text:\x1b
+
