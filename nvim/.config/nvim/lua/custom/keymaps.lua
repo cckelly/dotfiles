@@ -30,10 +30,18 @@ vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagn
 vim.keymap.set('t', '<Esc><Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' })
 
 -- NOTE: can remove these once h,j,k,l is comfortable
-vim.keymap.set('n', '<left>', '<cmd>echo "Use h to move!!"<CR>')
-vim.keymap.set('n', '<right>', '<cmd>echo "Use l to move!!"<CR>')
-vim.keymap.set('n', '<up>', '<cmd>echo "Use k to move!!"<CR>')
-vim.keymap.set('n', '<down>', '<cmd>echo "Use j to move!!"<CR>')
+vim.keymap.set('n', '<left>', '<cmd>echo "Use h to move!"<CR>')
+vim.keymap.set('n', '<right>', '<cmd>echo "Use l to move!"<CR>')
+vim.keymap.set('n', '<up>', '<cmd>echo "Use k to move!"<CR>')
+vim.keymap.set('n', '<down>', '<cmd>echo "Use j to move!"<CR>')
+vim.keymap.set('i', '<left>', '<cmd>echo "Exit insert mode to move!"<CR>')
+vim.keymap.set('i', '<right>', '<cmd>echo "Exit insert mode to move!"<CR>')
+vim.keymap.set('i', '<up>', '<cmd>echo "Exit insert mode to move!"<CR>')
+vim.keymap.set('i', '<down>', '<cmd>echo "Exit insert mode to move!"<CR>')
+vim.keymap.set('v', '<left>', '<cmd>echo "Use h to move!"<CR>')
+vim.keymap.set('v', '<right>', '<cmd>echo "Use l to move!"<CR>')
+vim.keymap.set('v', '<up>', '<cmd>echo "Use k to move!"<CR>')
+vim.keymap.set('v', '<down>', '<cmd>echo "Use j to move!"<CR>')
 
 -- Buffer navigation
 vim.keymap.set('n', '<S-l>', '<cmd>bnext<CR>', { desc = 'Next buffer' })
