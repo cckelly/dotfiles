@@ -30,9 +30,6 @@ plugins=(
   you-should-use
 )
 
-# Catppuccin Mocha theme for zsh-syntax-highlighting (must be before oh-my-zsh source)
-source ~/.zsh/catppuccin_mocha-zsh-syntax-highlighting.zsh
-
 # Source our config
 source $ZSH/oh-my-zsh.sh
 
@@ -130,3 +127,6 @@ precmd_functions+=(_reset_vi_mode_precmd)
 # Setup Starship
 # Needs to be last to avoid race conditions
 eval "$(starship init zsh)"
+
+# Aliases
+alias cl='clear'
