@@ -13,6 +13,13 @@ if ! command -v brew &>/dev/null; then
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
+# Add Homebrew to PATH for the current session (needed after a fresh install)
+if [[ -x /opt/homebrew/bin/brew ]]; then
+  eval "$(/opt/homebrew/bin/brew shellenv zsh)"
+elif [[ -x /usr/local/bin/brew ]]; then
+  eval "$(/usr/local/bin/brew shellenv zsh)"
+fi
+
 # Install Brew packages (includes stow)
 echo "Installing Homebrew packages..."
 brew bundle --file="$DOTFILES_DIR/Brewfile"
