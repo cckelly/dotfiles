@@ -14,6 +14,7 @@ My personal dotfiles for MacOS, managed with [GNU Stow](https://www.gnu.org/soft
 - **neovim** — editor (based on [my fork](https://github.com/cckelly/kickstart.nvim) of Kickstart)
 - **ghostty** — terminal emulator
 - **Brewfile** — Homebrew packages, casks, and taps
+- **OpenCode** - Open source coding agent
 
 ## Install
 
