@@ -51,6 +51,13 @@ for entry in "${OMZ_PLUGINS[@]}"; do
   fi
 done
 
+# Install TPM (Tmux Plugin Manager) if not already installed
+TPM_DIR="$HOME/.tmux/plugins/tpm"
+if [[ ! -d "$TPM_DIR" ]]; then
+  echo "Installing Tmux Plugin Manager (TPM)..."
+  git clone https://github.com/tmux-plugins/tpm "$TPM_DIR"
+fi
+
 # Stow all config packages and setup symlinks
 cd "$DOTFILES_DIR"
 for dir in */; do
@@ -60,6 +67,10 @@ for dir in */; do
   echo "Stowing $dir..."
   stow -v --target="$HOME" "$dir"
 done
+
+# Install tmux plugins via TPM (non-interactive)
+echo "Installing tmux plugins..."
+"$TPM_DIR/bin/install_plugins"
 
 echo "Configuration complete!"
 
