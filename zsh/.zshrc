@@ -31,7 +31,10 @@ plugins=(
 )
 
 # Source our config
-source $ZSH/oh-my-zsh.sh
+[[ -f $ZSH/oh-my-zsh.sh ]] && source $ZSH/oh-my-zsh.sh
+
+# Set bat theme to Catppuccin Mocha
+export BAT_THEME="Catppuccin Mocha"
 
 # Catppuccin Mocha setup for fzf
 export FZF_DEFAULT_OPTS=" \
