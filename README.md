@@ -1,5 +1,7 @@
 # dotfiles
 
+![screenshot](assets/screenshot.png)
+
 > **Warning**: The recommended flow is to fork the repo and make any updates you may want. Use at your own risk!
 
 My personal dotfiles for MacOS, managed with [GNU Stow](https://www.gnu.org/software/stow/). As this config was setup to transition myself from IDEs to terminal-first development and get ramped up on VIM motions as quickly as possible, I've purposefully removed bindings for the arrow keys. Feel free to edit as you see fit.
