@@ -6,6 +6,8 @@
 
 My personal dotfiles for MacOS, managed with [GNU Stow](https://www.gnu.org/software/stow/). As this config was setup to transition myself from IDEs to terminal-first development and get ramped up on VIM motions as quickly as possible, I've purposefully removed bindings for the arrow keys. Feel free to edit as you see fit.
 
+See [Keybindings.md](Keybindings.md) for a full reference of all bindings.
+
 ## What's included
 
 - **zsh** — shell configuration
