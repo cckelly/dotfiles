@@ -4,7 +4,7 @@ add_newline = true
 # Line 1: directory > git branch/status ......... time > command duration
 # Line 2: VI mode indicator > prompt character
 # The $fill module pushes time and duration to the right side.
-format = """$directory$git_branch$git_status$fill$time$cmd_duration$line_break${env_var.STARSHIP_VI_NORMAL}${env_var.STARSHIP_VI_INSERT}$character"""
+format = """$hostname$directory$git_branch$git_status$fill$time$cmd_duration$line_break${env_var.STARSHIP_VI_NORMAL}${env_var.STARSHIP_VI_INSERT}$character"""
 palette = "catppuccin_mocha"
 
 # Increase timeout from default (500ms)
@@ -27,6 +27,12 @@ format = '([$env_value│](bold green))'
 # Invisible fill to push time/duration to the right side of the prompt
 [fill]
 symbol = ' '
+
+# Show hostname always, in peach to match tmux host module
+[hostname]
+ssh_only = false
+format = '[$ssh_symbol\[$hostname\]]($style) '
+style = 'bold peach'
 
 [git_branch]
 format = '[$symbol$branch(:$remote_branch)]($style)'
