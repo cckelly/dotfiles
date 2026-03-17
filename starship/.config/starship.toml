@@ -32,6 +32,7 @@ symbol = ' '
 [hostname]
 ssh_only = false
 format = '[$ssh_symbol\[$hostname\]]($style) '
+ssh_symbol = '@'
 style = 'bold peach'
 
 [git_branch]
