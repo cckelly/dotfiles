@@ -33,6 +33,8 @@ fi
 # Install Oh My Zsh custom plugins
 ZSH_CUSTOM="${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}"
 
+# Add any oh-my-zsh plugins to auto clone and install as part of setup
+# Small duplication here with .zshrc plugins but IMO a shared file would add complexity
 OMZ_PLUGINS=(
   "zsh-autosuggestions|https://github.com/zsh-users/zsh-autosuggestions"
   "zsh-syntax-highlighting|https://github.com/zsh-users/zsh-syntax-highlighting"
