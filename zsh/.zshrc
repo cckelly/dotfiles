@@ -51,11 +51,11 @@ source <(fzf --zsh)
 # Setup zoxide for smarter cd
 eval "$(zoxide init zsh)"
 
-# Use vim over SSH but neovim locally
-if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='vim'
-else
+# Use nvim if available, fallback to vim
+if command -v nvim &>/dev/null; then
   export EDITOR='nvim'
+else
+  export EDITOR='vim'
 fi
 
 # Re-export PATH
