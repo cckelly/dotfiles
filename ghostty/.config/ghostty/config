@@ -43,9 +43,6 @@ mouse-hide-while-typing = true
 # automatically copy selected text to system clipboard
 copy-on-select = clipboard
 
-# start tmux automatically, attaching to existing 'main' session or creating it
-command = /bin/zsh -c "cd ~ && exec tmux new-session -A -s main"
-
 # keybinds
 # force ctrl+[ to send as escape to zsh's VI mode
 keybind = ctrl+[=text:\x1b
