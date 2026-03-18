@@ -137,3 +137,4 @@ eval "$(starship init zsh)"
 # Aliases
 alias cl='clear'
 alias oc='opencode'
+alias gc='git commit'
