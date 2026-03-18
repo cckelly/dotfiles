@@ -8,6 +8,8 @@ My personal dotfiles for MacOS, managed with [GNU Stow](https://www.gnu.org/soft
 
 See [Keybindings.md](Keybindings.md) for a full reference of all bindings.
 
+See [Aliases.md](Aliases.md) for additional aliases.
+
 ## What's included
 
 - **zsh** — shell configuration
