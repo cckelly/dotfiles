@@ -72,8 +72,11 @@ bindkey -M vicmd 'v' edit-command-line
 # Accept zsh-autosuggestions suggestions with Ctrl+E in VI mode
 bindkey -M viins '^E' end-of-line
 
+# jj to switch to normal mode (home row alternative to Ctrl+[)
+bindkey -M viins 'jj' vi-cmd-mode
+
 # Lower mode switch timeout from insert to normal
-export KEYTIMEOUT=1
+export KEYTIMEOUT=40
 
 # Unbind arrow keys to force hjkl usage
 noop() { }
